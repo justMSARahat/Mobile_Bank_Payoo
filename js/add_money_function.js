@@ -20,10 +20,24 @@ document.getElementById("Add_Money").addEventListener("click", function(event){
                 const NewBalance = Value + Amount;
 
                 document.getElementById("Balance").innerText = NewBalance;
+                alert(NewBalance);
+
+
+                // Update Transection
+                const tableBody = document.getElementById("Table_Body");
+
+                const newTR = document.createElement("tr");
+                newTR.innerHTML = `
+                          <td>Cash In</td>
+                          <td>${Account}</td>
+                          <td>$ ${Amount}</td>
+                `;
+                tableBody.appendChild(newTR);
 
 
 
-                alert(NewBalance)
+
+
 
             }else{
                 alert("Invalid Amount");

@@ -33,19 +33,7 @@
                     <img class="w-16 mx-auto" src="./assets/purse1.png" alt="" class="src">
                     <h3>Cashout</h3>
                 </div>
-                <div class="box border p-4 text-center rounded-sm">
-                    <img class="w-16 mx-auto" src="./assets/wallet1.png" alt="" class="src">
-                    <h3>Transfer Money</h3>
-                </div>
-                <div class="box border p-4 text-center rounded-sm">
-                    <img class="w-16 mx-auto" src="./assets/wallet1.png" alt="" class="src">
-                    <h3>Get bonus</h3>
-                </div>
-                <div class="box border p-4 text-center rounded-sm">
-                    <img class="w-16 mx-auto" src="./assets/money1.png" alt="" class="src">
-                    <h3>Pay Bill</h3>
-                </div>
-                <div class="box border p-4 text-center rounded-sm">
+                <div class="box border p-4 text-center rounded-sm" id="Transections_btn">
                     <img class="w-16 mx-auto" src="./assets/transaction1.png" alt="" class="src">
                     <h3>Transections</h3>
                 </div>
@@ -94,10 +82,44 @@
               </div>
             </div>
         </div>
+        <div id="Transections" class="">
+            <h2>Transections </h2>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <div class="overflow-x-auto">
+                    <table class="table table-zebra">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th>Type</th>
+                          <th>Acc No</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody id="Table_Body">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="utilities.js"></script>
     <script src="./js/add_money_function.js"></script>
     <script src="./js/cashout.js"></script>
     <script src="./js/toggle.js"></script>
-
+    <script src="./js/transections.js"></script>
 </body>
 </html>

@@ -38,6 +38,19 @@ document.getElementById("cashout").addEventListener('click', function(event){
 
 
                     alert(cashout_NewBalance);
+
+
+
+                    // Update Transection
+                    const tableBody = document.getElementById("Table_Body");
+
+                    const newTR = document.createElement("tr");
+                    newTR.innerHTML = `
+                            <td>Cash Out</td>
+                            <td>${AccountNumber}</td>
+                            <td>$ ${Amount}</td>
+                    `;
+                    tableBody.appendChild(newTR);
                 }
                 else{
                     alert("Dada!!! Account e taka kom.");
